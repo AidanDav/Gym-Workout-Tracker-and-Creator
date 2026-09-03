@@ -38,6 +38,12 @@ public class Machine {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private EquipmentType equipmentType;
+
+    public Machine(String name, EquipmentType equipmentType, Set<MuscleGroup> muscleGroups) {
+        this.name = name;
+        this.equipmentType = equipmentType;
+        this.muscleGroups = muscleGroups;
+    }
 }
 
 
